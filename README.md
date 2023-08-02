@@ -4,7 +4,7 @@
 
 1. [Introduction](#introduction)
 2. [Business Task](#business-task)
-3. [Data Sources](#data-sources)
+3. [The Data](#the-data)
 4. [Data Processing and Cleaning](#data-processing-and-cleaning)
 5. [Analysis and Insights](#analysis-and-insights)
 6. [Supporting Visualizations](#supporting-visualizations)
@@ -13,8 +13,7 @@
 
 ## Introduction
 
-In this case study, I will explore Bellabeat, a high-tech manufacturer of health-focused products for women. As a junior data analyst working on the marketing analytics team at Bellabeat, I will analyze smart device usage data to gain insight into how consumers use non-Bellabeat smart devices. My goal is to apply these insights to one Bellabeat product and provide high-level recommendations for the marketing strategy.
-
+This case study delves into the world of Bellabeat, a high-tech manufacturer of health-focused products for women. As a Junior Data Analyst on the team, my task is to analyze smart device usage data for Bellabeat. By exploring and understanding customer interactions with smart devices, I aim to uncover valuable insights that will drive Bellabeat's marketing strategy and propel the company towards greater success in the global smart device market.
 ## Business Task
 
 The business task involves analyzing smart device usage data and answering the following questions:
@@ -23,9 +22,17 @@ The business task involves analyzing smart device usage data and answering the f
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-## Data Sources
+## The Data
 
-In this section, I will provide details about the data sources used for the analysis. This may include information about the smart device usage data and any other relevant data sets.
+The data used for this case study is sourced from the Fitbit Fitness Tracker Data, a publicly available dataset on Kaggle. It contains personal fitness tracker information from 30 FitBit users who provided their consent for data submission, including minute-level output for physical activity, heart rate, and sleep monitoring. The dataset consists of 18 CSV files, which have been downloaded and stored in R Studio for analysis.
+
+**Limitations**
+
++ Sample size: With only 30 users, the dataset may not be fully representative of all FitBit users.
++ Outdated: The data covers a one-month period in 2016, which may not reflect current trends and user habits.
++ Limited demographics: The dataset lacks information such as gender, age, and location, which could be useful for targeted marketing strategies.
+
+Despite these limitations, the dataset offers valuable insights into user habits and will serve as the foundation for the analysis in this case study.
 
 ## Data Processing and Cleaning
 
