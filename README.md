@@ -6,8 +6,8 @@
 2. [Business Task](#business-task)
 3. [The Data](#the-data)
 4. [Data Processing and Cleaning](#data-processing-and-cleaning)
-5. [Analysis and Insights](#analysis-and-vizualization)
-6. [Conclusion](#conclusion-and-recommendation)
+5. [Analysis and Visualizations](#analysis-and-visualizations)
+6. [Conclusion and Recommendations](#conclusion-and-recommendations)
 
 ## Introduction
 
@@ -214,10 +214,34 @@ ggplot(data = sleep_vs_activity) +
     theme(plot.title = element_text(hjust = 0.5))
 ```
 ![Asleep vs Sedentary](https://github.com/mkj89/bellabeat-fitness-analysis/blob/main/Viz/asleep%20vs%20sedentary.png)
+
 The graph demonstrates a clear negative trend, indicating that individuals who lead a sedentary lifestyle tend to have shorter and less restful sleep, whereas those who engage in more physical activity enjoy longer and more restorative sleep. The data points to a significant difference in sleep duration, with less active individuals sleeping for as little as 50 minutes, while highly active individuals can enjoy up to 13.33 hours of sleep. This observation underscores the importance of physical activity in promoting better sleep quality and overall well-being.
 
 
 ## Conclusion and Recommendations
 
-In the conclusion, I will summarize the key findings from the analysis and reiterate the recommendations for Bellabeat's marketing strategy based on the smart device usage data.
 
+After a thorough analysis of the 2016 dataset from Fitbit Fitness Tracker, several trends in smart device usage have been identified, providing valuable insights for Bellabeat's marketing strategy. Despite the limitations of the dataset, which covers a one-month period and comprises a small sample size of 30 users, the findings can still offer meaningful implications for the company.
+
+### Trends in Smart Device Usage:
+***1. Positive Correlation:*** The graph comparing Total Steps to Calories burned indicates a positive trend, suggesting that as individuals take more steps to achieve their fitness goals, they burn more calories. Although there are outliers, the overall pattern implies a positive connection between physical activity and calorie expenditure.
+
+***2. Usage Patterns:*** The Total Intensity vs. Time graph illustrates two significant peaks around 12 pm (noon) and 5 pm to 7 pm. These patterns indicate that users are more physically active during these periods, possibly during their lunch breaks or after their typical 9-5 working hours.
+
+***3. Sleep and Activity Link:*** The graph comparing Time Minutes Asleep to Total Steps reveals a negative trend, showing that individuals who are less active throughout the day tend to have less restful sleep. Conversely, those who engage in more physical activity tend to have longer periods of sleep. The difference in the range suggests that less active individuals may get as little as 50 minutes of sleep, while highly active individuals may sleep up to 13.33 hours.
+
+### Recommendations for Bellabeat's Marketing Strategy:
+
+***1. Target Audience:*** Based on the analysis, Bellabeat's primary target audience should be health-conscious, career-driven individuals with 9-5 jobs. The increased device usage rate after work hours indicates that these individuals prioritize their health and fitness, making them an ideal market for Bellabeat's smart devices.
+
+***2. Influencer Partnerships:*** To effectively reach the target audience, Bellabeat should consider collaborating with health and fitness influencers on social media. Partnering with influencers will allow Bellabeat to showcase its products to a niche audience that is more likely to make fitness-related purchases.
+
+***3. Enhanced Features:*** Bellabeat's smart devices should be equipped with personalized reminders and recommendations. These features can include reminders for taking breaks, walking, and engaging in breathing exercises. Additionally, providing food recommendations to improve fat burning and enhance sleep quality can further cater to the target audience's health needs.
+
+***4. Spokespersons:*** Utilizing spokespersons who have experience using Bellabeat's smart devices and have achieved success in their fitness journey can be a powerful marketing strategy. Athletes or fitness enthusiasts who can share their positive experiences with the products can inspire and influence potential customers.
+
+***5. Innovation:*** Bellabeat should invest in research and development to introduce innovative technology that can differentiate its smart devices from competitors. Exploring technologies that track brain patterns or immune system activity related to active and sedentary lifestyles could potentially disrupt the market and attract more customers.
+
+***6. Ongoing Research:*** Given the limitations of the dataset, it is essential for Bellabeat to conduct further research and collect more recent data to ensure that its marketing strategies align with current trends and consumer preferences.
+
+By implementing these recommendations and gaining a better understanding of the target audience, Bellabeat can create a more effective and targeted marketing strategy. Ultimately, this will empower individuals to lead healthier and more active lives with the support of Bellabeat's innovative smart devices.
