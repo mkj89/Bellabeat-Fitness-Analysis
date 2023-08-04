@@ -1,0 +1,17 @@
+# Summary statistics
+# Daily Activity
+summary(DailyActivity$TotalSteps)
+summary(DailyActivity$TotalDistance)
+summary(DailyActivity$SedentaryMinutes)
+summary(DailyActivity$Calories)
+
+# Calories
+summary(Calories$Calories)
+
+# Sleep
+summary(Sleep$TotalMinutesAsleep)
+summary(Sleep$TotalTimeInBed)
+
+# Weight
+summary(Weight$WeightPounds)
+summary(Weight$BMI)
