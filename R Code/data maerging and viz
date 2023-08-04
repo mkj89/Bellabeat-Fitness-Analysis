@@ -1,0 +1,24 @@
+# Merging two data sets
+DailyActivity$date <- as.Date(DailyActivity$ActivityDate, format = "%m/%d/%Y")
+sleep_vs_activity <- merge(Sleep, DailyActivity, by = c("Id", "date"))
+
+# Total Steps Vs. Calories
+ggplot(data = DailyActivity) +
+  geom_point(mapping = aes(x = TotalSteps, y = Calories)) +
+  geom_smooth(mapping = aes(x = TotalSteps, y = Calories)) +
+  labs(title = "TotalSteps Vs. Calories") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# Total Intensity Vs. Time
+ggplot(data = Intensities, aes(x = time, y = TotalIntensity)) +
+  geom_bar(stat = "identity", fill = 'blue') +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title = "Total Intensity vs. Time") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# Time Minutes Asleep Vs. Total Steps
+ggplot(data = sleep_vs_activity) +
+  geom_point(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+  geom_smooth(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+  labs(title = "Time Minutes Asleep vs. Sedentary Minutes") +
+  theme(plot.title = element_text(hjust = 0.5))
