@@ -1,0 +1,20 @@
+# Data Cleaning
+# Intensities
+Intensities$ActivityHour <- parse_date_time(Intensities$ActivityHour, "%m/%d/%Y %I:%M:%S %p")
+Intensities$date <- as.Date(Intensities$ActivityHour, format = "%d/%m/%Y")
+Intensities$time <- format(as.POSIXct(Intensities$ActivityHour), format = "%H:%M:%S")
+
+# Weight
+Weight$Date <- parse_date_time(Weight$Date, "%m/%d/%Y %I:%M:%S %p")
+Weight$date <- as.Date(Weight$Date, format = "%d/%m/%Y")
+Weight$time <- format(as.POSIXct(Weight$Date), format = "%H:%M:%S")
+
+# Sleep
+Sleep$SleepDay <- parse_date_time(Sleep$SleepDay, "%m/%d/%Y %I:%M:%S %p")
+Sleep$date <- as.Date(Sleep$SleepDay, format = "%d/%m/%Y")
+Sleep$time <- format(as.POSIXct(Sleep$SleepDay), format = "%H:%M:%S")
+
+# Calories
+Calories$ActivityHour <- parse_date_time(Calories$ActivityHour, "%m/%d/%Y %I:%M:%S")
+Calories$date <- as.Date(Calories$ActivityHour, format = "%d/%m/%Y")
+Calories$time <- format(as.POSIXct(Calories$ActivityHour), format = "%H:%M:%S")
