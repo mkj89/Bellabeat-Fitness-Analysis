@@ -1,0 +1,6 @@
+# Data Import
+DailyActivity <- read.csv("dailyActivity_merged.csv")
+Calories <- read.csv("hourlyCalories_merged.csv")
+Intensities <- read.csv("hourlyIntensities_merged.csv")
+Sleep <- read.csv("sleepDay_merged.csv")
+Weight <- read.csv("weightLogInfo_merged.csv")
