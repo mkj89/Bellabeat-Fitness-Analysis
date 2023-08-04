@@ -156,7 +156,65 @@ ggplot(data = sleep_vs_activity) +
 
 ## Analysis and Visualizations
 
-In this section, I will present the results of my analysis and the insights gained from the smart device usage data. I will highlight trends and patterns that could be relevant to Bellabeat customers and their usage of smart devices.
+## Analysis and Visualization
+
+### Number of Participants
+
+In the initial exploration, I determined the number of unique participants in each dataset:
+
+- Daily Activity: 33 participants
+- Weight: 8 participants
+- Sleep: 24 participants
+- Calories: 33 participants
+- Intensities: 33 participants
+
+It is important to note that the dataset has some limitations in terms of sample size and demographics, which may affect the generalizability of the insights.
+
+### Trends in Smart Device Usage
+
+#### Total Steps Vs. Calories
+
+To understand the relationship between physical activity and calorie expenditure, I created a scatter plot comparing "TotalSteps" and "Calories" using the `ggplot2` library:
+
+```
+ggplot(data = DailyActivity) +
+    geom_point(mapping = aes(x = TotalSteps, y = Calories)) +
+    geom_smooth(mapping = aes(x = TotalSteps, y = Calories)) +
+    labs(title = "TotalSteps Vs. Calories") +
+    theme(plot.title = element_text(hjust = 0.5))
+```
+![Totals Stepvs vs Calories](https://github.com/mkj89/bellabeat-fitness-analysis/blob/main/Viz/Steps%20vs%20Calories.png)
+
+The graph shows a positive trend, indicating that as the total number of steps increases, so does the number of calories burned. However, there are outliers on the graph, suggesting that there are other factors influencing calorie expenditure beyond just the number of steps taken. For instance, activities like swimming or bodybuilding might burn calories without requiring many steps.
+
+#### Total Intensity Vs. Time
+
+To explore the intensity of smart device usage over time, I created a bar chart representing "TotalIntensity" versus "Time" using the `ggplot2` library:
+
+```
+ggplot(data = Intensities, aes(x = time, y = TotalIntensity)) +
+    geom_bar(stat = "identity", fill = 'blue') +
+    theme(axis.text.x = element_text(angle = 90)) +
+    labs(title = "Total Intensity vs. Time") +
+    theme(plot.title = element_text(hjust = 0.5))
+```
+![Itensity vs time](https://github.com/mkj89/bellabeat-fitness-analysis/blob/main/Viz/itensity%20vs%20time.png)
+
+The intensity of smart device usage shows a distinct pattern, starting around 5 am and experiencing its first, albeit smaller, peak around noon. After a slight dip at 3 pm, it then exhibits a prominent 3-hour peak from 5 to 7 pm. Subsequently, it undergoes a significant decline until 8 pm and gradually slows down until 11 pm. Finally, it reaches its lowest point at 3 am. This trend suggests that consumers are more physically active during the early morning and afternoon hours, with another surge in the evening, possibly during their lunch breaks or after their typical 9-5 working hours.
+
+#### Time Minutes Asleep Vs. Total Steps
+
+To analyze the relationship between sleep and activity levels, I created a scatter plot comparing "TotalMinutesAsleep" and "SedentaryMinutes" using the `ggplot2` library:
+
+```
+ggplot(data = sleep_vs_activity) +
+    geom_point(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+    geom_smooth(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+    labs(title = "Time Minutes Asleep vs. Sedentary Minutes") +
+    theme(plot.title = element_text(hjust = 0.5))
+```
+![Asleep vs Sedentary](https://github.com/mkj89/bellabeat-fitness-analysis/blob/main/Viz/asleep%20vs%20sedentary.png)
+The graph demonstrates a clear negative trend, indicating that individuals who lead a sedentary lifestyle tend to have shorter and less restful sleep, whereas those who engage in more physical activity enjoy longer and more restorative sleep. The data points to a significant difference in sleep duration, with less active individuals sleeping for as little as 50 minutes, while highly active individuals can enjoy up to 13.33 hours of sleep. This observation underscores the importance of physical activity in promoting better sleep quality and overall well-being.
 
 
 ## Conclusion and Recommendations
