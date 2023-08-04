@@ -1,0 +1,13 @@
+# View the datasets
+View(DailyActivity)
+View(Calories)
+View(Intensities)
+View(Sleep)
+View(Weight)
+
+# Glimpse the datasets
+glimpse(DailyActivity)
+glimpse(Calories)
+glimpse(Intensities)
+glimpse(Sleep)
+glimpse(Weight)
