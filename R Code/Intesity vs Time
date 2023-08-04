@@ -1,0 +1,5 @@
+ggplot(data = Intensities, aes(x = time, y = TotalIntensity)) +
+    geom_bar(stat = "identity", fill = 'blue') +
+    theme(axis.text.x = element_text(angle = 90)) +
+    labs(title = "Total Intensity vs. Time") +
+    theme(plot.title = element_text(hjust = 0.5))
