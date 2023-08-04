@@ -1,0 +1,5 @@
+ggplot(data = sleep_vs_activity) +
+    geom_point(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+    geom_smooth(mapping = aes(x = TotalMinutesAsleep, y = SedentaryMinutes)) +
+    labs(title = "Time Minutes Asleep vs. Sedentary Minutes") +
+    theme(plot.title = element_text(hjust = 0.5))
