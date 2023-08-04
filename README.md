@@ -156,8 +156,6 @@ ggplot(data = sleep_vs_activity) +
 
 ## Analysis and Visualizations
 
-## Analysis and Visualization
-
 ### Number of Participants
 
 In the initial exploration, I determined the number of unique participants in each dataset:
